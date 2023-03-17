@@ -7,7 +7,7 @@ I can either have 1 big powerful machine to handle all those incoming requests. 
 OR 
 I can have multiple machines which will have my application running on them and they will handle the requests.  (aka Horizontal Scaling)
 
-The ability to handle the changing volume of requests by increasing the power of a machine or number of machines is called "SCALABILITY"
+The ability to handle the more #requests by increasing the power of 1 machine or number of machines is called "SCALABILITY".
 
 
 Differences b/w the two types of scaling
@@ -15,16 +15,19 @@ Differences b/w the two types of scaling
 Vertical Scaling
 1. 1 big powerful machine.
 2. Single point of failure
-3. Interprocess communication, so, it is fast.
+3. Data consistency is maintained....well everything is within 1 machine.
 4. No load balancing required.
-
+5. Interprocess communication, so, it is fast.
+6. Hardware limitations. We can't just keep making the computer bigger and bigger. We have to think about the cost as well.
 
 Horizontal Scaling
 1. multiple machines.
 2. Resilient - since even if 1 or 2 computers go down, the rest will handle the incoming requests.
-3. If there is requirement of an atomic task, then, we might need to lock all operations on all the machines and then proceed after the task is done.
+3. There is data inconsistency. If there is requirement of an atomic task, then, we might need to lock the database on all the machines and then proceed after the task is done. Here there is loose transactional gaurantee. 
 4. Requires load balancing
-
+5. If communication between servers is required, it is done over network(network calls or Remote Procedure Calls aka RPC's) and that is slow. 
+6. Scales well as number of users increase. we can add more machines.
 
 
 In real world scenarios, both vertical and horizontal scaling is used.
+The good parts of Vertical scaling (i.e. Point #3 and #5) and Horizontal scaling(i.e. Point #2 and #6) both come in handy.
