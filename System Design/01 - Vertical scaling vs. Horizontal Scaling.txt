@@ -1,1 +1,30 @@
-Vertical scaling
+suppose we have an application. People want to use our application; but I won't give my code to everyone.
+I would expose my s/w using API's. They will REQUEST something and I will give RESPONSE.
+Now this application will be running on a computer which will handle all the REQUEST & RESPONSEs.
+
+suppose my application becomes very popular and many people want to use it, then my machine needs to handle all those requests. Since they are paying me for my application, I need to keep my computer ON all the time.
+I can either have 1 big powerful machine to handle all those incoming requests.    (aka Vertical Scaling)
+OR 
+I can have multiple machines which will have my application running on them and they will handle the requests.  (aka Horizontal Scaling)
+
+The ability to handle the changing volume of requests by increasing the power of a machine or number of machines is called "SCALABILITY"
+
+
+Differences b/w the two types of scaling
+
+Vertical Scaling
+1. 1 big powerful machine.
+2. Single point of failure
+3. Interprocess communication, so, it is fast.
+4. No load balancing required.
+
+
+Horizontal Scaling
+1. multiple machines.
+2. Resilient - since even if 1 or 2 computers go down, the rest will handle the incoming requests.
+3. If there is requirement of an atomic task, then, we might need to lock all operations on all the machines and then proceed after the task is done.
+4. Requires load balancing
+
+
+
+In real world scenarios, both vertical and horizontal scaling is used.
