@@ -10,3 +10,14 @@ Some are very simple, they use the round robin algorithm to direct the incoming 
 
 Some are very smart LB; they are aware of which server is under how much utilisation and according to that information, it distributes the incoming traffic to the servers. This happens through the communication b/w the servers and the load balancer.
 
+There are many algorithms which are used in load balancers.
+1. round robin
+2. hashing
+3. Least connections
+4. Least response time
+
+Benefits of using load balancers are -
+1. ensures scalability - it can upscale and downscale depending on the availability of resources and incoming traffic.
+2. reduces downtime, increased performance.
+3. increased flexibility.
+4. redundancy.
