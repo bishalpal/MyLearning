@@ -1,0 +1,12 @@
+Suppose, u have an application, and people really liked it. Huge number of people are sending requests to your machine.
+
+To deal with the huge load, u used horizontal scaling to handle it.
+Now, the question comes, how do u decide which request should go to which server?
+Here, "Load Balancer" (lets just say it as LB) comes to the rescue.
+
+The LB's job is to direct the traffic to the different servers.
+There are many types of LB. 
+Some are very simple, they use the round robin algorithm to direct the incoming requests. The problem with this one is that it doesn't consider the fact of "session length". Some people may just log in, do something and log out within 5 mins; but some may stay for 2 hrs+. So, the load on the servers is not properly balanced.
+
+Some are very smart LB; they are aware of which server is under how much utilisation and according to that information, it distributes the incoming traffic to the servers. This happens through the communication b/w the servers and the load balancer.
+
