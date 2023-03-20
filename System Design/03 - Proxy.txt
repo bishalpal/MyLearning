@@ -1,0 +1,2 @@
+Proxy means "on behalf of"
+A proxy is a hardware/software that sits between the client and the server.
