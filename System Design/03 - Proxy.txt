@@ -11,15 +11,25 @@ A proxy is helpful in many ways -
 
 There are 2 types of proxy -
 1. Forward proxy - In this case, the proxy is on the client side. It is also called as client side proxy.
+Here, client sends the requests to proxy, the proxy sends the request to the server, collects the response and then it gives the response back to client.
 Benefits of using a forward proxy -
 a. helps in bypassing organisation rules.
-b. helps in accessing blocked websites.
+b. useful in blocking the access to certain sites.
+c. maintains anonymity of the client. Server doesn't know the IP of the client.
+d. Helpful in an organisation where many there are multiple clients, and these requests can be controlled and monitored.
 
 
 2. Reverse proxy - In this case, the proxy is on the server side. It is also called as server side proxy.
+Here, the client talks to the proxy, the proxy then talks to the servers, gets the response from the server and then gives it to the client.
 Benefits of using a reverse proxy - 
-a. helps in maintaining anonymity of the servers.
-b. helps in blocking certain requests.
-c. helps in caching the frequent requests.
+a. helps in maintaining anonymity of the servers. The client doesn't know any of the IP addresses of the servers.
+b. it is used for traffic control.
+c. helps in caching the commonly requested content. This helps in improving the performance.
 d. helps in load balancing.
-e. increases the security of the servers.
+e. increases the security of the servers like preventing against DDoS attacks.
+f. it is used for SSL encryption etc.
+
+
+Workarounds using proxies
+1. on client side, the client can bypass the organisation rules/blocked websites.
+2. on server side, if there are multiple servers and there is 1 proxy which is doing the load balancing; the proxy can become a cause of single point failure.
