@@ -1,2 +1,25 @@
 Proxy means "on behalf of"
 A proxy is a hardware/software that sits between the client and the server.
+
+A proxy is helpful in many ways - 
+1. it helps in maintaining anonymity.
+2. it helps in blocking certain sites / IP's.
+3. it helps in caching the most frequent responses.
+4. it helps in improving the security of the servers.
+5. it helps in batch processing of requests.
+
+
+There are 2 types of proxy -
+1. Forward proxy - In this case, the proxy is on the client side. It is also called as client side proxy.
+Benefits of using a forward proxy -
+a. helps in bypassing organisation rules.
+b. helps in accessing blocked websites.
+
+
+2. Reverse proxy - In this case, the proxy is on the server side. It is also called as server side proxy.
+Benefits of using a reverse proxy - 
+a. helps in maintaining anonymity of the servers.
+b. helps in blocking certain requests.
+c. helps in caching the frequent requests.
+d. helps in load balancing.
+e. increases the security of the servers.
