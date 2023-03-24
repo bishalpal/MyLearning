@@ -23,3 +23,10 @@ Consistency - at any given point of time, the state of the DB will always consis
 Isolation - two transactions/operations do not know about each other.
 Durability - a mechanism that whatever writes/updates are happening, they are logged properly and the data is being stored properly in the disk.
 
+Non Relational DB - 
+in case u don't know how your DB schema is going to evolve, in that case using RDBMS becomes difficult. when the data size increases, entering data into multiple columns becomes increasing complex and fetching data from multiple tables just makes the joins more complicated.
+
+scaling - in RDBMS it is easier to scale vertically. However to do horizontal scaling, application code is required which becomes difficult later on.
+
+In NoSQL DB's schema is not fixed and there are different types of NoSQL DB's that cater to different requirements.
+1. Key Value Stores - 
