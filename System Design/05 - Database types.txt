@@ -1,2 +1,25 @@
 Databases, Types of DB's, Use cases, Pro's and cons
 
+Database - a system to store data.
+There are different databases which depending on the property of data, volume of data, querying requirements provide different features and the ways to store the data.
+
+Some popular types of DB's are -
+1. Relational
+2. Non Relational
+3. File type
+4. Network DB's
+etc.
+
+Most of the times, relational and non-relational DB's are used.
+
+Relational DB -             
+reference link - https://www.astera.com/type/blog/a-quick-overview-of-different-types-of-databases/
+---------------
+the most popular ones, data stored in the form of rows and columns. The 2 factors which indicate to choose Relational DB are -
+1. Schema - refers to how your data is going to be structured. the data should satisfy the constraints.
+2. ACID property - 
+Atomicity - a transaction happens either completely or doesn't happen at all.
+Consistency - at any given point of time, the state of the DB will always consistent.
+Isolation - two transactions/operations do not know about each other.
+Durability - a mechanism that whatever writes/updates are happening, they are logged properly and the data is being stored properly in the disk.
+
